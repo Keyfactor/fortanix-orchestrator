@@ -1,0 +1,10 @@
+﻿{
+  "extensions": {
+    "Keyfactor.Orchestrators.Extensions.IOrchestratorJobExtension": {
+      "CertStores.Fortanix.Inventory": {
+        "assemblypath": "Fortanix.dll",
+        "TypeFullName": "Keyfactor.Extensions.Orchestrator.Fortanix.Inventory"
+      }
+    }
+  }
+}
