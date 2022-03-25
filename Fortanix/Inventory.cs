@@ -20,7 +20,7 @@ namespace Keyfactor.Extensions.Orchestrator.Fortanix
         public string ExtensionName => "";
 
         //Job Entry Point
-        public async Task<JobResult> ProcessJob(InventoryJobConfiguration config, SubmitInventoryUpdate submitInventory)
+        public JobResult ProcessJob(InventoryJobConfiguration config, SubmitInventoryUpdate submitInventory)
         {
             ILogger logger = LogHandler.GetClassLogger<Inventory>();
             logger.LogDebug($"Begin Fortanix Inventory job for job id {config.JobId}...");
@@ -34,7 +34,7 @@ namespace Keyfactor.Extensions.Orchestrator.Fortanix
                     throw new Exception("Missing Fortanix API key.  Please provide a valid Fortanix API key in the Keyfactor Command Fortanix certificate store you are working with as the store password.");
 
                 APIProcessor api = new APIProcessor();
-                await api.Initialize(config.CertificateStoreDetails.StorePassword);
+                api.Initialize(config.CertificateStoreDetails.StorePassword).GetAwaiter().GetResult();
 
                 List<SecurityObject> certificates = api.GetCertificates().Result;
 

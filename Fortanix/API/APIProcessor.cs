@@ -19,7 +19,7 @@ namespace Keyfactor.Extensions.Orchestrator.Fortanix.API
         private string ApiKey { get; set; }
         private string BearerToken { get; set; }
 
-        public async void Initialize(string apiKey)
+        public async Task Initialize(string apiKey)
         {
             ILogger logger = LogHandler.GetClassLogger<APIProcessor>();
             logger.MethodEntry(LogLevel.Debug);
