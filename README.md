@@ -23,8 +23,8 @@ This orchestrator extension has been tested using Keyfactor Command 9.4 and the 
 
 1. In the Keyfactor Orchestrator installation folder (by convention usually C:\Program Files\Keyfactor\Keyfactor Orchestrator), find the "extensions" folder. Underneath that, create a new folder named "Fortanix".  You may choose to use a different name, but then you must edit the manifest.json file downloaded from GitHub (Step 2) and modify based on Step 4 below.
 2. Download the latest version of the Fortanix orchestrator extension from [GitHub](https://github.com/Keyfactor/fortanix-orchestrator).
-3. Copy the contents of the download installation zip file to the folder created in step 1.
-4. (Optional) If you decided to name the Fortanix folder in step 1 to something different than the suggested name (Fortanix), you will need to edit the manifest.json file.  Modify "CertStores.{folder name}.*Capability*" to the folder name you created.
+3. Copy the contents of the download installation zip file to the folder created in Step 1.
+4. (Optional) If you decided to name the folder created in Step 1 to something different than the suggested name (Fortanix), you will need to edit the manifest.json file.  Modify "CertStores.{folder name}.*Capability*" to the folder name you created in Step 1.
 
 
 ## Fortanix Orchestrator Extension Configuration
