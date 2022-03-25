@@ -4,5 +4,5 @@
   "name": "Fortanix",
   "status": "prototype",
   "link_github": false,
-  "description": "The Fortanix orchestrator extension allows for the inventory of certificates in fortanix stores. Only Inventory is supported. The orchestrator extension the Fortanix API library to perform this function.."
+  "description": "The Fortanix orchestrator extension allows for the inventory of certificates in Fortanix stores. Only Inventory is supported. The orchestrator extension the Fortanix API library to perform this function.."
 }
