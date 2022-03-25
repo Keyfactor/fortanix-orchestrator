@@ -16,15 +16,15 @@ The version number of a the Fortanix orchestrator extension can be verified by r
 
 ## Keyfactor Version Supported
 
-This orchestrator extension has been tested using Keyfactor Command 9.4 the Keyfactor Universal Orchestrator version 9.5.  However this should be compatible with any Keyfactor versions 9.x and above. 
+This orchestrator extension has been tested using Keyfactor Command 9.4 and the Keyfactor Universal Orchestrator version 9.5.  However this should be compatible with any Keyfactor versions 9.x and above. 
 
 
 ## Fortanix Orchestrator Installation
 
-1. In the Keyfactor Orchestrator installation folder (by convention usually C:\Program Files\Keyfactor\Keyfactor Orchestrator), find the "extensions" folder. Underneath that, create a new folder named "Fortanix".  You may choose to use a different name, but then you must edit the manifest.json file downloaded from GitHub and modify based on step 4 below.
+1. In the Keyfactor Orchestrator installation folder (by convention usually C:\Program Files\Keyfactor\Keyfactor Orchestrator), find the "extensions" folder. Underneath that, create a new folder named "Fortanix".  You may choose to use a different name, but then you must edit the manifest.json file downloaded from GitHub (Step 2) and modify based on Step 4 below.
 2. Download the latest version of the Fortanix orchestrator extension from [GitHub](https://github.com/Keyfactor/fortanix-orchestrator).
-3. Copy the contents of the download installation zip file to folder created in step 1.
-4. (Optional) If you decided to name the Fortanix folder in step 1 to something different than the suggested names, you will need to edit the manifest.json file.  Modify "CertStores.{folder name}.*Capability*" to the folder name you used for each store type.
+3. Copy the contents of the download installation zip file to the folder created in step 1.
+4. (Optional) If you decided to name the Fortanix folder in step 1 to something different than the suggested name (Fortanix), you will need to edit the manifest.json file.  Modify "CertStores.{folder name}.*Capability*" to the folder name you created.
 
 
 ## Fortanix Orchestrator Extension Configuration
