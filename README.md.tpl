@@ -49,7 +49,8 @@ Navigate to Certificate Locations => Certificate Stores within Keyfactor Command
 
 - **Category** – Required. The Fortanix type name (or alternate named based on certificate store type setup) must be selected.
 - **Container** – Optional. Select a container if utilized.
-- **Client Machine** – Required. A place holder value is required to be entered here, but the value does not matter.  "n/a" or other place holder value would be fine.
+- **Client Machine** – Required. A value is required to be entered here, but this value is not used, so a place holder value is fine.
+- **Store Path** – Required. A value is required to be entered here, but this value is not used, so a place holder value is fine.
 - **Orchestrator** - Required. Select the orchestrator assigned to handle Fortanix jobs.
-- **Store Password** - Required. Paste in the Fortanix API Key here or if you have a PAM provider integration set up, select "Load From PAM Provider, and paste the PAM Provider key here, pointing to the Fortanix API key.
+- **Store Password** - Required. Paste in the Fortanix API Key here or if you have a PAM provider integration set up, select "Load From PAM Provider, and paste the PAM Provider key, pointing to the Fortanix API key.
 - **Inventory Schedule** - Optional. Select a schedule to run inventory jobs for this certificate store.
