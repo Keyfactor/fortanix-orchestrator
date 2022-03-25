@@ -1,7 +1,7 @@
 # Fortanix
 ## orchestrator
 
-The Fortanix orchestrator extension allows for the inventory of certificates in Fortanix stores. Only Inventory is supported. The orchestrator extension the Fortanix API library to perform this function..
+The Fortanix orchestrator extension allows for the inventory of certificates in Fortanix stores. Only Inventory is supported. The orchestrator extension the (Fortanix API library)[https://www.fortanix.com/api/dsm/] to perform this function..
 
 <!-- add integration specific information below -->
 
