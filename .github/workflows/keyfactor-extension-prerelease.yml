@@ -5,7 +5,7 @@ name: Keyfactor Extension - Release Candidate
 
 env:
   SOLUTION_FOLDER: '.'
-  PROJECT_FOLDER: 'JavaKeyStoreSSH'
+  PROJECT_FOLDER: 'Fortanix'
 
 # Controls when the action will run. 
 on:
