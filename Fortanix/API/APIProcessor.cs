@@ -15,15 +15,16 @@ namespace Keyfactor.Extensions.Orchestrator.Fortanix.API
 {
     class APIProcessor
     {
-        private const string API_URL = "https://apps.sdkms.fortanix.com";
+        private string ApiURL { get; set; }
         private string ApiKey { get; set; }
         private string BearerToken { get; set; }
 
-        public async Task Initialize(string apiKey)
+        public async Task Initialize(string apiURL, string apiKey)
         {
             ILogger logger = LogHandler.GetClassLogger<APIProcessor>();
             logger.MethodEntry(LogLevel.Debug);
 
+            ApiURL = apiURL;
             ApiKey = apiKey;
             await SetBearerToken();
 
@@ -82,7 +83,7 @@ namespace Keyfactor.Extensions.Orchestrator.Fortanix.API
 
             RestResponse response;
 
-            RestClient client = new RestClient(API_URL);
+            RestClient client = new RestClient(ApiURL);
             request.AddHeader("Authorization", auth);
 
             try

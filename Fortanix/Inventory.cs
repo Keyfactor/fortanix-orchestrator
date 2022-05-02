@@ -30,11 +30,14 @@ namespace Keyfactor.Extensions.Orchestrator.Fortanix
 
             try
             {
+                if (config.CertificateStoreDetails.StorePath == null || string.IsNullOrEmpty(config.CertificateStoreDetails.StorePath))
+                    throw new Exception("Missing Store Path.  Please provide a valid store path that should map to the Fortanix API base URL used to manage your Fortanix certificate store.");
+
                 if (config.CertificateStoreDetails.StorePassword == null || string.IsNullOrEmpty(config.CertificateStoreDetails.StorePassword))
                     throw new Exception("Missing Fortanix API key.  Please provide a valid Fortanix API key in the Keyfactor Command Fortanix certificate store you are working with as the store password.");
 
                 APIProcessor api = new APIProcessor();
-                api.Initialize(config.CertificateStoreDetails.StorePassword).GetAwaiter().GetResult();
+                api.Initialize(config.CertificateStoreDetails.StorePath, config.CertificateStoreDetails.StorePassword).GetAwaiter().GetResult();
 
                 List<SecurityObject> certificates = api.GetCertificates().Result;
 
