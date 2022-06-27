@@ -50,7 +50,7 @@ Navigate to Certificate Locations => Certificate Stores within Keyfactor Command
 - **Category** – Required. The Fortanix type name (or alternate named based on certificate store type setup) must be selected.
 - **Container** – Optional. Select a container if utilized.
 - **Client Machine** – Required. A value is required to be entered here, but this value is not used, so a place holder value is fine.
-- **Store Path** – Required. The full base URL representing the location of the Fortanix API endpoints used in this orchestrator extension.  An example would be **https://apps.sdkms.fortanix.com**
+- **Store Path** – Required. The full base URL representing the location of the Fortanix API endpoints used in this orchestrator extension.  An example would be **https://apps.smartkey.io** as stated [here](https://www.fortanix.com/fortanix-restful-api-references/dsm).  Please contact Fortanix for the correct URL for your account.
 - **Orchestrator** - Required. Select the orchestrator assigned to handle Fortanix jobs.
 - **Store Password** - Required. Paste in the Fortanix API Key here or if you have a PAM provider integration set up, select "Load From PAM Provider, and paste the PAM Provider key, pointing to the Fortanix API key.
 - **Inventory Schedule** - Optional. Select a schedule to run inventory jobs for this certificate store.
