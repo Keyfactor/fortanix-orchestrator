@@ -2,7 +2,7 @@
   "$schema": "https://keyfactor.github.io/integration-manifest-schema.json",
   "integration_type": "orchestrator",
   "name": "Fortanix",
-  "status": "prototype",
-  "link_github": false,
+  "status": "production",
+  "link_github": true,
   "description": "The Fortanix orchestrator extension allows for the inventory of certificates in Fortanix stores. Only Inventory is supported. The orchestrator extension the [Fortanix API library](https://www.fortanix.com/api/dsm/) to perform this function.."
 }
